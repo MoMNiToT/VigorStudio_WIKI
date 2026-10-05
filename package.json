@@ -1,0 +1,26 @@
+{
+  "name": "vigor-studio-wiki",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A video wiki edited by everyone and shared by everyone!",
+  "author": "MoMNiToT <Mark060903@126.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:preview": "http-server docs/.vuepress/dist",
+    "vp-update": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.31",
+    "http-server": "^14.1.1",
+    "typescript": "^6.0.3",
+    "vue": "^3.5.34",
+    "vuepress": "2.0.0-rc.31",
+    "vuepress-theme-plume": "1.0.0-rc.212"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
