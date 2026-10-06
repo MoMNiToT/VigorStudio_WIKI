@@ -22,5 +22,9 @@
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
+  },
+  "dependencies": {
+    "postprocessing": "^6.39.5",
+    "three": "^0.186.1"
   }
 }

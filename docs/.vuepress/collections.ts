@@ -26,24 +26,97 @@
  */
 import { defineCollection, defineCollections } from 'vuepress-theme-plume'
 
-const blog = defineCollection({
-  type: 'post',
-  dir: 'blog',
-  title: 'Blog',
-  link: '/blog/',
+const preface = defineCollection({
+  type: 'doc',
+  dir: 'preface',
+  title: 'Preface',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
 })
 
-const demoDoc = defineCollection({
+const aigc = defineCollection({
   type: 'doc',
-  dir: 'demo',
-  linkPrefix: '/demo',
-  title: 'Demo',
-  sidebar: ['', 'foo', 'bar'],
-  // 根据文件结构自动生成侧边栏
-  // sidebar: 'auto',
+  dir: 'aigc',
+  title: 'AIGC',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
+})
+
+const director = defineCollection({
+  type: 'doc',
+  dir: 'director',
+  title: 'Director',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
+})
+
+const photo = defineCollection({
+  type: 'doc',
+  dir: 'photo',
+  title: 'Photo',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
+})
+
+const video = defineCollection({
+  type: 'doc',
+  dir: 'video',
+  linkPrefix: '/video/',
+  title: 'Video',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
+})
+
+const stage = defineCollection({
+  type: 'doc',
+  dir: 'stage',
+  title: 'Stage',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
+})
+
+const live = defineCollection({
+  type: 'doc',
+  dir: 'live',
+  title: 'Live',
+  sidebar: 'auto',
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  } 
 })
 
 export default defineCollections([
-  blog,
-  demoDoc,
+  preface,
+  aigc,
+  director,
+  photo,
+  video,
+  stage,
+  live,
 ])

@@ -16,7 +16,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: 'VigorStudioWIKI',
+  title: 'Video WIKI',
   description: 'A video wiki edited by everyone and shared by everyone!',
 
   head: [

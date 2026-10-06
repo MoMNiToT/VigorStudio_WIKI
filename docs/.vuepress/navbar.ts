@@ -8,11 +8,11 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export default defineNavbarConfig([
   { text: '首页', link: '/' },
-  { text: '博客', link: '/blog/' },
-  { text: ' 标签', link: '/blog/tags/' },
-  { text: '归档', link: '/blog/archives/' },
-  {
-    text: '笔记',
-    items: [{ text: ' 示例', link: '/demo/README.md' }]
-  },
+  { text: '前言', link: '/preface/' },
+  { text: 'AIGC', link: '/aigc/' },
+  { text: '导演', link: '/director/' },
+  { text: '摄制', link: '/photo/' },
+  { text: '后期', link: '/video/' },
+  { text: '舞台', link: '/stage/' },
+  { text: '直播', link: '/live/' },
 ])
